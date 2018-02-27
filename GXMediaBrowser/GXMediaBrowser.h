@@ -35,4 +35,6 @@
 
 - (void)deletePhotoAtCurrentIndex:(void (^)(GXMediaBrowserModel *model))deletingBlock success:(void (^)(BOOL finished))finishedBlock;
 
+- (void)updateTitleText;// 子类可重写更新设置动态title
+
 @end
