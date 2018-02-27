@@ -22,7 +22,6 @@
 		33DE6C4A20450266007B0285 /* GXMediaBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4120450266007B0285 /* GXMediaBrowserModel.m */; };
 		33DE6C4B20450266007B0285 /* GXMediaImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4320450266007B0285 /* GXMediaImageCell.m */; };
 		33DE6C4C20450266007B0285 /* GXMediaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4520450266007B0285 /* GXMediaVideoCell.m */; };
-		33DE6C5320450503007B0285 /* UIViewController+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4F20450503007B0285 /* UIViewController+GXAdd.m */; };
 		33DE6C5420450503007B0285 /* UIView+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C5020450503007B0285 /* UIView+GXAdd.m */; };
 		33DE6C7620450830007B0285 /* GXFooterCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C5E20450830007B0285 /* GXFooterCRView.m */; };
 		33DE6C7720450830007B0285 /* GXFooterCRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C5F20450830007B0285 /* GXFooterCRView.xib */; };
@@ -97,10 +96,8 @@
 		33DE6C4420450266007B0285 /* GXMediaVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaVideoCell.h; sourceTree = "<group>"; };
 		33DE6C4520450266007B0285 /* GXMediaVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaVideoCell.m; sourceTree = "<group>"; };
 		33DE6C4D204502ED007B0285 /* GXCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXCommonMacro.h; sourceTree = "<group>"; };
-		33DE6C4F20450503007B0285 /* UIViewController+GXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GXAdd.m"; sourceTree = "<group>"; };
 		33DE6C5020450503007B0285 /* UIView+GXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GXAdd.m"; sourceTree = "<group>"; };
 		33DE6C5120450503007B0285 /* UIView+GXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GXAdd.h"; sourceTree = "<group>"; };
-		33DE6C5220450503007B0285 /* UIViewController+GXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GXAdd.h"; sourceTree = "<group>"; };
 		33DE6C5D20450830007B0285 /* GXFooterCRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXFooterCRView.h; sourceTree = "<group>"; };
 		33DE6C5E20450830007B0285 /* GXFooterCRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFooterCRView.m; sourceTree = "<group>"; };
 		33DE6C5F20450830007B0285 /* GXFooterCRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXFooterCRView.xib; sourceTree = "<group>"; };
@@ -253,8 +250,6 @@
 			children = (
 				33DE6C5120450503007B0285 /* UIView+GXAdd.h */,
 				33DE6C5020450503007B0285 /* UIView+GXAdd.m */,
-				33DE6C5220450503007B0285 /* UIViewController+GXAdd.h */,
-				33DE6C4F20450503007B0285 /* UIViewController+GXAdd.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -524,7 +519,6 @@
 				33DE6C4920450266007B0285 /* GXMediaBrowserLayout.m in Sources */,
 				33DE6C4620450266007B0285 /* GXMediaAnimationDelegate.m in Sources */,
 				33DE6C4720450266007B0285 /* GXMediaBaseCell.m in Sources */,
-				33DE6C5320450503007B0285 /* UIViewController+GXAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,6 @@
 
 #import "GXMediaBrowser.h"
 #import "UIView+GXAdd.h"
-#import "UIViewController+GXAdd.h"
 #import "GXMediaImageCell.h"
 #import "GXMediaVideoCell.h"
 #import "GXMediaBrowserLayout.h"
