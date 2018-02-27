@@ -315,12 +315,8 @@
         NSLog(@"播放媒体不正确");
         return;
     }
-    if (model.filePath) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(mediaBrowser:atPlayButton:)]) {
-            [self.delegate mediaBrowser:self atPlayButton:button];
-        }
-    } else {
-        NSLog(@"请先下载视频再播放");
+    if (self.delegate && [self.delegate respondsToSelector:@selector(mediaBrowser:atPlayModel:)]) {
+        [self.delegate mediaBrowser:self atPlayModel:model];
     }
 }
 
