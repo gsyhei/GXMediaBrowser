@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33DE6BEF20450201007B0285 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6BEE20450201007B0285 /* AppDelegate.m */; };
+		33DE6BF220450201007B0285 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6BF120450201007B0285 /* ViewController.m */; };
+		33DE6BF520450201007B0285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6BF320450201007B0285 /* Main.storyboard */; };
+		33DE6BF720450202007B0285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6BF620450202007B0285 /* Assets.xcassets */; };
+		33DE6BFA20450202007B0285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6BF820450202007B0285 /* LaunchScreen.storyboard */; };
+		33DE6BFD20450202007B0285 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6BFC20450202007B0285 /* main.m */; };
+		33DE6C0720450202007B0285 /* GXMediaBrowserSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C0620450202007B0285 /* GXMediaBrowserSampleTests.m */; };
+		33DE6C1220450204007B0285 /* GXMediaBrowserSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C1120450204007B0285 /* GXMediaBrowserSampleUITests.m */; };
+		33DE6C4620450266007B0285 /* GXMediaAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C3820450266007B0285 /* GXMediaAnimationDelegate.m */; };
+		33DE6C4720450266007B0285 /* GXMediaBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C3A20450266007B0285 /* GXMediaBaseCell.m */; };
+		33DE6C4820450266007B0285 /* GXMediaBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C3C20450266007B0285 /* GXMediaBrowser.m */; };
+		33DE6C4920450266007B0285 /* GXMediaBrowserLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C3F20450266007B0285 /* GXMediaBrowserLayout.m */; };
+		33DE6C4A20450266007B0285 /* GXMediaBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4120450266007B0285 /* GXMediaBrowserModel.m */; };
+		33DE6C4B20450266007B0285 /* GXMediaImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4320450266007B0285 /* GXMediaImageCell.m */; };
+		33DE6C4C20450266007B0285 /* GXMediaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4520450266007B0285 /* GXMediaVideoCell.m */; };
+		33DE6C5320450503007B0285 /* UIViewController+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4F20450503007B0285 /* UIViewController+GXAdd.m */; };
+		33DE6C5420450503007B0285 /* UIView+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C5020450503007B0285 /* UIView+GXAdd.m */; };
+		33DE6C7620450830007B0285 /* GXFooterCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C5E20450830007B0285 /* GXFooterCRView.m */; };
+		33DE6C7720450830007B0285 /* GXFooterCRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C5F20450830007B0285 /* GXFooterCRView.xib */; };
+		33DE6C7820450830007B0285 /* GXHeaderCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C6120450830007B0285 /* GXHeaderCRView.m */; };
+		33DE6C7920450830007B0285 /* GXHeaderCRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6220450830007B0285 /* GXHeaderCRView.xib */; };
+		33DE6C7A20450830007B0285 /* GXWaterCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C6420450830007B0285 /* GXWaterCVCell.m */; };
+		33DE6C7B20450830007B0285 /* GXWaterCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6520450830007B0285 /* GXWaterCVCell.xib */; };
+		33DE6C7C20450830007B0285 /* GXWaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C6720450830007B0285 /* GXWaterViewController.m */; };
+		33DE6C7D20450830007B0285 /* 0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6920450830007B0285 /* 0.jpeg */; };
+		33DE6C7E20450830007B0285 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6A20450830007B0285 /* 1.jpeg */; };
+		33DE6C7F20450830007B0285 /* 10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6B20450830007B0285 /* 10.jpeg */; };
+		33DE6C8020450830007B0285 /* 11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6C20450830007B0285 /* 11.jpeg */; };
+		33DE6C8120450830007B0285 /* 12.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6D20450830007B0285 /* 12.jpeg */; };
+		33DE6C8220450830007B0285 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6E20450830007B0285 /* 2.jpeg */; };
+		33DE6C8320450830007B0285 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C6F20450830007B0285 /* 3.jpeg */; };
+		33DE6C8420450830007B0285 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7020450830007B0285 /* 4.jpeg */; };
+		33DE6C8520450830007B0285 /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7120450830007B0285 /* 5.jpeg */; };
+		33DE6C8620450830007B0285 /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7220450830007B0285 /* 6.jpeg */; };
+		33DE6C8720450830007B0285 /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7320450830007B0285 /* 7.jpeg */; };
+		33DE6C8820450830007B0285 /* 8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7420450830007B0285 /* 8.jpeg */; };
+		33DE6C8920450830007B0285 /* 9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7520450830007B0285 /* 9.jpeg */; };
+		F417B100DE2F90F3DC7BF2EA /* libPods-GXMediaBrowserSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD32BED00E970DF0CC3E6097 /* libPods-GXMediaBrowserSample.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33DE6C0320450202007B0285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33DE6BE220450201007B0285 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33DE6BE920450201007B0285;
+			remoteInfo = GXMediaBrowserSample;
+		};
+		33DE6C0E20450202007B0285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33DE6BE220450201007B0285 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33DE6BE920450201007B0285;
+			remoteInfo = GXMediaBrowserSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33DE6BEA20450201007B0285 /* GXMediaBrowserSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXMediaBrowserSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DE6BED20450201007B0285 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33DE6BEE20450201007B0285 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33DE6BF020450201007B0285 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		33DE6BF120450201007B0285 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33DE6BF420450201007B0285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33DE6BF620450202007B0285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33DE6BF920450202007B0285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33DE6BFB20450202007B0285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DE6BFC20450202007B0285 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33DE6C0220450202007B0285 /* GXMediaBrowserSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GXMediaBrowserSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DE6C0620450202007B0285 /* GXMediaBrowserSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserSampleTests.m; sourceTree = "<group>"; };
+		33DE6C0820450202007B0285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DE6C0D20450202007B0285 /* GXMediaBrowserSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GXMediaBrowserSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DE6C1120450204007B0285 /* GXMediaBrowserSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserSampleUITests.m; sourceTree = "<group>"; };
+		33DE6C1320450204007B0285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DE6C3720450266007B0285 /* GXMediaAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaAnimationDelegate.h; sourceTree = "<group>"; };
+		33DE6C3820450266007B0285 /* GXMediaAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaAnimationDelegate.m; sourceTree = "<group>"; };
+		33DE6C3920450266007B0285 /* GXMediaBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBaseCell.h; sourceTree = "<group>"; };
+		33DE6C3A20450266007B0285 /* GXMediaBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBaseCell.m; sourceTree = "<group>"; };
+		33DE6C3B20450266007B0285 /* GXMediaBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowser.h; sourceTree = "<group>"; };
+		33DE6C3C20450266007B0285 /* GXMediaBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowser.m; sourceTree = "<group>"; };
+		33DE6C3D20450266007B0285 /* GXMediaBrowserCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserCommon.h; sourceTree = "<group>"; };
+		33DE6C3E20450266007B0285 /* GXMediaBrowserLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserLayout.h; sourceTree = "<group>"; };
+		33DE6C3F20450266007B0285 /* GXMediaBrowserLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserLayout.m; sourceTree = "<group>"; };
+		33DE6C4020450266007B0285 /* GXMediaBrowserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserModel.h; sourceTree = "<group>"; };
+		33DE6C4120450266007B0285 /* GXMediaBrowserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserModel.m; sourceTree = "<group>"; };
+		33DE6C4220450266007B0285 /* GXMediaImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaImageCell.h; sourceTree = "<group>"; };
+		33DE6C4320450266007B0285 /* GXMediaImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaImageCell.m; sourceTree = "<group>"; };
+		33DE6C4420450266007B0285 /* GXMediaVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaVideoCell.h; sourceTree = "<group>"; };
+		33DE6C4520450266007B0285 /* GXMediaVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaVideoCell.m; sourceTree = "<group>"; };
+		33DE6C4D204502ED007B0285 /* GXCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXCommonMacro.h; sourceTree = "<group>"; };
+		33DE6C4F20450503007B0285 /* UIViewController+GXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GXAdd.m"; sourceTree = "<group>"; };
+		33DE6C5020450503007B0285 /* UIView+GXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GXAdd.m"; sourceTree = "<group>"; };
+		33DE6C5120450503007B0285 /* UIView+GXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GXAdd.h"; sourceTree = "<group>"; };
+		33DE6C5220450503007B0285 /* UIViewController+GXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GXAdd.h"; sourceTree = "<group>"; };
+		33DE6C5D20450830007B0285 /* GXFooterCRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXFooterCRView.h; sourceTree = "<group>"; };
+		33DE6C5E20450830007B0285 /* GXFooterCRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFooterCRView.m; sourceTree = "<group>"; };
+		33DE6C5F20450830007B0285 /* GXFooterCRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXFooterCRView.xib; sourceTree = "<group>"; };
+		33DE6C6020450830007B0285 /* GXHeaderCRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHeaderCRView.h; sourceTree = "<group>"; };
+		33DE6C6120450830007B0285 /* GXHeaderCRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXHeaderCRView.m; sourceTree = "<group>"; };
+		33DE6C6220450830007B0285 /* GXHeaderCRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXHeaderCRView.xib; sourceTree = "<group>"; };
+		33DE6C6320450830007B0285 /* GXWaterCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXWaterCVCell.h; sourceTree = "<group>"; };
+		33DE6C6420450830007B0285 /* GXWaterCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXWaterCVCell.m; sourceTree = "<group>"; };
+		33DE6C6520450830007B0285 /* GXWaterCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXWaterCVCell.xib; sourceTree = "<group>"; };
+		33DE6C6620450830007B0285 /* GXWaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXWaterViewController.h; sourceTree = "<group>"; };
+		33DE6C6720450830007B0285 /* GXWaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXWaterViewController.m; sourceTree = "<group>"; };
+		33DE6C6920450830007B0285 /* 0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpeg; sourceTree = "<group>"; };
+		33DE6C6A20450830007B0285 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		33DE6C6B20450830007B0285 /* 10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpeg; sourceTree = "<group>"; };
+		33DE6C6C20450830007B0285 /* 11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpeg; sourceTree = "<group>"; };
+		33DE6C6D20450830007B0285 /* 12.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpeg; sourceTree = "<group>"; };
+		33DE6C6E20450830007B0285 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		33DE6C6F20450830007B0285 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		33DE6C7020450830007B0285 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
+		33DE6C7120450830007B0285 /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
+		33DE6C7220450830007B0285 /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpeg; sourceTree = "<group>"; };
+		33DE6C7320450830007B0285 /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpeg; sourceTree = "<group>"; };
+		33DE6C7420450830007B0285 /* 8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpeg; sourceTree = "<group>"; };
+		33DE6C7520450830007B0285 /* 9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpeg; sourceTree = "<group>"; };
+		3B900A9CDC8DD1E46FF53010 /* Pods-GXMediaBrowserSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXMediaBrowserSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXMediaBrowserSample/Pods-GXMediaBrowserSample.debug.xcconfig"; sourceTree = "<group>"; };
+		5D1B7D233D0ACA7A59E2AAE0 /* Pods-GXMediaBrowserSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXMediaBrowserSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXMediaBrowserSample/Pods-GXMediaBrowserSample.release.xcconfig"; sourceTree = "<group>"; };
+		BD32BED00E970DF0CC3E6097 /* libPods-GXMediaBrowserSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXMediaBrowserSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33DE6BE720450201007B0285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F417B100DE2F90F3DC7BF2EA /* libPods-GXMediaBrowserSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DE6BFF20450202007B0285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DE6C0A20450202007B0285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25F71753914F5B58BFD0CEE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B900A9CDC8DD1E46FF53010 /* Pods-GXMediaBrowserSample.debug.xcconfig */,
+				5D1B7D233D0ACA7A59E2AAE0 /* Pods-GXMediaBrowserSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		33DE6BE120450201007B0285 = {
+			isa = PBXGroup;
+			children = (
+				33DE6BEC20450201007B0285 /* GXMediaBrowserSample */,
+				33DE6C0520450202007B0285 /* GXMediaBrowserSampleTests */,
+				33DE6C1020450202007B0285 /* GXMediaBrowserSampleUITests */,
+				33DE6BEB20450201007B0285 /* Products */,
+				25F71753914F5B58BFD0CEE6 /* Pods */,
+				851843AEDC5CE9828981EF74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33DE6BEB20450201007B0285 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33DE6BEA20450201007B0285 /* GXMediaBrowserSample.app */,
+				33DE6C0220450202007B0285 /* GXMediaBrowserSampleTests.xctest */,
+				33DE6C0D20450202007B0285 /* GXMediaBrowserSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33DE6BEC20450201007B0285 /* GXMediaBrowserSample */ = {
+			isa = PBXGroup;
+			children = (
+				33DE6C3620450266007B0285 /* GXMediaBrowser */,
+				33DE6C5C20450830007B0285 /* UICollectionView */,
+				33DE6BED20450201007B0285 /* AppDelegate.h */,
+				33DE6BEE20450201007B0285 /* AppDelegate.m */,
+				33DE6BF020450201007B0285 /* ViewController.h */,
+				33DE6BF120450201007B0285 /* ViewController.m */,
+				33DE6BF320450201007B0285 /* Main.storyboard */,
+				33DE6BF620450202007B0285 /* Assets.xcassets */,
+				33DE6BF820450202007B0285 /* LaunchScreen.storyboard */,
+				33DE6BFB20450202007B0285 /* Info.plist */,
+				33DE6BFC20450202007B0285 /* main.m */,
+			);
+			path = GXMediaBrowserSample;
+			sourceTree = "<group>";
+		};
+		33DE6C0520450202007B0285 /* GXMediaBrowserSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				33DE6C0620450202007B0285 /* GXMediaBrowserSampleTests.m */,
+				33DE6C0820450202007B0285 /* Info.plist */,
+			);
+			path = GXMediaBrowserSampleTests;
+			sourceTree = "<group>";
+		};
+		33DE6C1020450202007B0285 /* GXMediaBrowserSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33DE6C1120450204007B0285 /* GXMediaBrowserSampleUITests.m */,
+				33DE6C1320450204007B0285 /* Info.plist */,
+			);
+			path = GXMediaBrowserSampleUITests;
+			sourceTree = "<group>";
+		};
+		33DE6C3620450266007B0285 /* GXMediaBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				33DE6C4E20450471007B0285 /* Categories */,
+				33DE6C4D204502ED007B0285 /* GXCommonMacro.h */,
+				33DE6C3720450266007B0285 /* GXMediaAnimationDelegate.h */,
+				33DE6C3820450266007B0285 /* GXMediaAnimationDelegate.m */,
+				33DE6C3920450266007B0285 /* GXMediaBaseCell.h */,
+				33DE6C3A20450266007B0285 /* GXMediaBaseCell.m */,
+				33DE6C3B20450266007B0285 /* GXMediaBrowser.h */,
+				33DE6C3C20450266007B0285 /* GXMediaBrowser.m */,
+				33DE6C3D20450266007B0285 /* GXMediaBrowserCommon.h */,
+				33DE6C3E20450266007B0285 /* GXMediaBrowserLayout.h */,
+				33DE6C3F20450266007B0285 /* GXMediaBrowserLayout.m */,
+				33DE6C4020450266007B0285 /* GXMediaBrowserModel.h */,
+				33DE6C4120450266007B0285 /* GXMediaBrowserModel.m */,
+				33DE6C4220450266007B0285 /* GXMediaImageCell.h */,
+				33DE6C4320450266007B0285 /* GXMediaImageCell.m */,
+				33DE6C4420450266007B0285 /* GXMediaVideoCell.h */,
+				33DE6C4520450266007B0285 /* GXMediaVideoCell.m */,
+			);
+			name = GXMediaBrowser;
+			path = ../../GXMediaBrowser;
+			sourceTree = "<group>";
+		};
+		33DE6C4E20450471007B0285 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				33DE6C5120450503007B0285 /* UIView+GXAdd.h */,
+				33DE6C5020450503007B0285 /* UIView+GXAdd.m */,
+				33DE6C5220450503007B0285 /* UIViewController+GXAdd.h */,
+				33DE6C4F20450503007B0285 /* UIViewController+GXAdd.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		33DE6C5C20450830007B0285 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				33DE6C5D20450830007B0285 /* GXFooterCRView.h */,
+				33DE6C5E20450830007B0285 /* GXFooterCRView.m */,
+				33DE6C5F20450830007B0285 /* GXFooterCRView.xib */,
+				33DE6C6020450830007B0285 /* GXHeaderCRView.h */,
+				33DE6C6120450830007B0285 /* GXHeaderCRView.m */,
+				33DE6C6220450830007B0285 /* GXHeaderCRView.xib */,
+				33DE6C6320450830007B0285 /* GXWaterCVCell.h */,
+				33DE6C6420450830007B0285 /* GXWaterCVCell.m */,
+				33DE6C6520450830007B0285 /* GXWaterCVCell.xib */,
+				33DE6C6620450830007B0285 /* GXWaterViewController.h */,
+				33DE6C6720450830007B0285 /* GXWaterViewController.m */,
+				33DE6C6820450830007B0285 /* image */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		33DE6C6820450830007B0285 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				33DE6C6920450830007B0285 /* 0.jpeg */,
+				33DE6C6A20450830007B0285 /* 1.jpeg */,
+				33DE6C6B20450830007B0285 /* 10.jpeg */,
+				33DE6C6C20450830007B0285 /* 11.jpeg */,
+				33DE6C6D20450830007B0285 /* 12.jpeg */,
+				33DE6C6E20450830007B0285 /* 2.jpeg */,
+				33DE6C6F20450830007B0285 /* 3.jpeg */,
+				33DE6C7020450830007B0285 /* 4.jpeg */,
+				33DE6C7120450830007B0285 /* 5.jpeg */,
+				33DE6C7220450830007B0285 /* 6.jpeg */,
+				33DE6C7320450830007B0285 /* 7.jpeg */,
+				33DE6C7420450830007B0285 /* 8.jpeg */,
+				33DE6C7520450830007B0285 /* 9.jpeg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		851843AEDC5CE9828981EF74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD32BED00E970DF0CC3E6097 /* libPods-GXMediaBrowserSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33DE6BE920450201007B0285 /* GXMediaBrowserSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33DE6C1620450204007B0285 /* Build configuration list for PBXNativeTarget "GXMediaBrowserSample" */;
+			buildPhases = (
+				0902327957E946EA25EE1015 /* [CP] Check Pods Manifest.lock */,
+				33DE6BE620450201007B0285 /* Sources */,
+				33DE6BE720450201007B0285 /* Frameworks */,
+				33DE6BE820450201007B0285 /* Resources */,
+				10D342E968E74CB0C51384FB /* [CP] Embed Pods Frameworks */,
+				D3F4373469A171D713835B7C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GXMediaBrowserSample;
+			productName = GXMediaBrowserSample;
+			productReference = 33DE6BEA20450201007B0285 /* GXMediaBrowserSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33DE6C0120450202007B0285 /* GXMediaBrowserSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33DE6C1920450204007B0285 /* Build configuration list for PBXNativeTarget "GXMediaBrowserSampleTests" */;
+			buildPhases = (
+				33DE6BFE20450202007B0285 /* Sources */,
+				33DE6BFF20450202007B0285 /* Frameworks */,
+				33DE6C0020450202007B0285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33DE6C0420450202007B0285 /* PBXTargetDependency */,
+			);
+			name = GXMediaBrowserSampleTests;
+			productName = GXMediaBrowserSampleTests;
+			productReference = 33DE6C0220450202007B0285 /* GXMediaBrowserSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33DE6C0C20450202007B0285 /* GXMediaBrowserSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33DE6C1C20450204007B0285 /* Build configuration list for PBXNativeTarget "GXMediaBrowserSampleUITests" */;
+			buildPhases = (
+				33DE6C0920450202007B0285 /* Sources */,
+				33DE6C0A20450202007B0285 /* Frameworks */,
+				33DE6C0B20450202007B0285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33DE6C0F20450202007B0285 /* PBXTargetDependency */,
+			);
+			name = GXMediaBrowserSampleUITests;
+			productName = GXMediaBrowserSampleUITests;
+			productReference = 33DE6C0D20450202007B0285 /* GXMediaBrowserSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33DE6BE220450201007B0285 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = protruly;
+				TargetAttributes = {
+					33DE6BE920450201007B0285 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					33DE6C0120450202007B0285 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33DE6BE920450201007B0285;
+					};
+					33DE6C0C20450202007B0285 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33DE6BE920450201007B0285;
+					};
+				};
+			};
+			buildConfigurationList = 33DE6BE520450201007B0285 /* Build configuration list for PBXProject "GXMediaBrowserSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33DE6BE120450201007B0285;
+			productRefGroup = 33DE6BEB20450201007B0285 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33DE6BE920450201007B0285 /* GXMediaBrowserSample */,
+				33DE6C0120450202007B0285 /* GXMediaBrowserSampleTests */,
+				33DE6C0C20450202007B0285 /* GXMediaBrowserSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33DE6BE820450201007B0285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DE6C8620450830007B0285 /* 6.jpeg in Resources */,
+				33DE6C8320450830007B0285 /* 3.jpeg in Resources */,
+				33DE6BFA20450202007B0285 /* LaunchScreen.storyboard in Resources */,
+				33DE6C7D20450830007B0285 /* 0.jpeg in Resources */,
+				33DE6C8920450830007B0285 /* 9.jpeg in Resources */,
+				33DE6C7B20450830007B0285 /* GXWaterCVCell.xib in Resources */,
+				33DE6C8420450830007B0285 /* 4.jpeg in Resources */,
+				33DE6C8520450830007B0285 /* 5.jpeg in Resources */,
+				33DE6C8120450830007B0285 /* 12.jpeg in Resources */,
+				33DE6C8720450830007B0285 /* 7.jpeg in Resources */,
+				33DE6C7F20450830007B0285 /* 10.jpeg in Resources */,
+				33DE6C7E20450830007B0285 /* 1.jpeg in Resources */,
+				33DE6C7720450830007B0285 /* GXFooterCRView.xib in Resources */,
+				33DE6C7920450830007B0285 /* GXHeaderCRView.xib in Resources */,
+				33DE6C8220450830007B0285 /* 2.jpeg in Resources */,
+				33DE6C8820450830007B0285 /* 8.jpeg in Resources */,
+				33DE6BF720450202007B0285 /* Assets.xcassets in Resources */,
+				33DE6BF520450201007B0285 /* Main.storyboard in Resources */,
+				33DE6C8020450830007B0285 /* 11.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DE6C0020450202007B0285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DE6C0B20450202007B0285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0902327957E946EA25EE1015 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GXMediaBrowserSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10D342E968E74CB0C51384FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GXMediaBrowserSample/Pods-GXMediaBrowserSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F4373469A171D713835B7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GXMediaBrowserSample/Pods-GXMediaBrowserSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33DE6BE620450201007B0285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DE6BF220450201007B0285 /* ViewController.m in Sources */,
+				33DE6C5420450503007B0285 /* UIView+GXAdd.m in Sources */,
+				33DE6C4C20450266007B0285 /* GXMediaVideoCell.m in Sources */,
+				33DE6C7C20450830007B0285 /* GXWaterViewController.m in Sources */,
+				33DE6BFD20450202007B0285 /* main.m in Sources */,
+				33DE6C4820450266007B0285 /* GXMediaBrowser.m in Sources */,
+				33DE6C4B20450266007B0285 /* GXMediaImageCell.m in Sources */,
+				33DE6C7620450830007B0285 /* GXFooterCRView.m in Sources */,
+				33DE6BEF20450201007B0285 /* AppDelegate.m in Sources */,
+				33DE6C4A20450266007B0285 /* GXMediaBrowserModel.m in Sources */,
+				33DE6C7820450830007B0285 /* GXHeaderCRView.m in Sources */,
+				33DE6C7A20450830007B0285 /* GXWaterCVCell.m in Sources */,
+				33DE6C4920450266007B0285 /* GXMediaBrowserLayout.m in Sources */,
+				33DE6C4620450266007B0285 /* GXMediaAnimationDelegate.m in Sources */,
+				33DE6C4720450266007B0285 /* GXMediaBaseCell.m in Sources */,
+				33DE6C5320450503007B0285 /* UIViewController+GXAdd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DE6BFE20450202007B0285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DE6C0720450202007B0285 /* GXMediaBrowserSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33DE6C0920450202007B0285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DE6C1220450204007B0285 /* GXMediaBrowserSampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33DE6C0420450202007B0285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33DE6BE920450201007B0285 /* GXMediaBrowserSample */;
+			targetProxy = 33DE6C0320450202007B0285 /* PBXContainerItemProxy */;
+		};
+		33DE6C0F20450202007B0285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33DE6BE920450201007B0285 /* GXMediaBrowserSample */;
+			targetProxy = 33DE6C0E20450202007B0285 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33DE6BF320450201007B0285 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33DE6BF420450201007B0285 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33DE6BF820450202007B0285 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33DE6BF920450202007B0285 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33DE6C1420450204007B0285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		33DE6C1520450204007B0285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33DE6C1720450204007B0285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B900A9CDC8DD1E46FF53010 /* Pods-GXMediaBrowserSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L54KZN9KMH;
+				INFOPLIST_FILE = GXMediaBrowserSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gin.GXMediaBrowserSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		33DE6C1820450204007B0285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D1B7D233D0ACA7A59E2AAE0 /* Pods-GXMediaBrowserSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L54KZN9KMH;
+				INFOPLIST_FILE = GXMediaBrowserSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gin.GXMediaBrowserSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		33DE6C1A20450204007B0285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L54KZN9KMH;
+				INFOPLIST_FILE = GXMediaBrowserSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gin.GXMediaBrowserSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GXMediaBrowserSample.app/GXMediaBrowserSample";
+			};
+			name = Debug;
+		};
+		33DE6C1B20450204007B0285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L54KZN9KMH;
+				INFOPLIST_FILE = GXMediaBrowserSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gin.GXMediaBrowserSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GXMediaBrowserSample.app/GXMediaBrowserSample";
+			};
+			name = Release;
+		};
+		33DE6C1D20450204007B0285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L54KZN9KMH;
+				INFOPLIST_FILE = GXMediaBrowserSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gin.GXMediaBrowserSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GXMediaBrowserSample;
+			};
+			name = Debug;
+		};
+		33DE6C1E20450204007B0285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L54KZN9KMH;
+				INFOPLIST_FILE = GXMediaBrowserSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gin.GXMediaBrowserSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GXMediaBrowserSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33DE6BE520450201007B0285 /* Build configuration list for PBXProject "GXMediaBrowserSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DE6C1420450204007B0285 /* Debug */,
+				33DE6C1520450204007B0285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33DE6C1620450204007B0285 /* Build configuration list for PBXNativeTarget "GXMediaBrowserSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DE6C1720450204007B0285 /* Debug */,
+				33DE6C1820450204007B0285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33DE6C1920450204007B0285 /* Build configuration list for PBXNativeTarget "GXMediaBrowserSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DE6C1A20450204007B0285 /* Debug */,
+				33DE6C1B20450204007B0285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33DE6C1C20450204007B0285 /* Build configuration list for PBXNativeTarget "GXMediaBrowserSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DE6C1D20450204007B0285 /* Debug */,
+				33DE6C1E20450204007B0285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33DE6BE220450201007B0285 /* Project object */;
+}
