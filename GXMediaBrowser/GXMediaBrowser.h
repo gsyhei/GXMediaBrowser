@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GXMediaBrowserModel.h"
-#import "GXCommonMacro.h"
+#import "GXMediaBrowserCommon.h"
 
 @class GXMediaBrowser;
 @protocol GXMediaBrowserDelegate <NSObject>
