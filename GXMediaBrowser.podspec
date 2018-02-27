@@ -25,8 +25,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/gsyhei/GXMediaBrowser.git", :tag => "0.0.1" }
   s.requires_arc = true
   s.source_files = "GXMediaBrowser/GXMediaBrowser*.{h,m}"
-  s.frameworks   = "Foundation","UIKit"
-  s.dependency    'DACircularProgress', '~> 2.3.0'
-  s.dependency    'SDWebImage', '~> 3.8.0'
+  s.dependency     'DACircularProgress', '~> 2.3.0'
+  s.dependency     'SDWebImage', '~> 3.8.0'
 
 end
