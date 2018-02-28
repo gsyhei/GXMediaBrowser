@@ -7,7 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		336AFBFA20463E090087D18E /* UIView+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFBF820463E080087D18E /* UIView+GXAdd.m */; };
+		336AFC0D20464FFC0087D18E /* GXMediaAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFBFD20464FFC0087D18E /* GXMediaAnimationDelegate.m */; };
+		336AFC0E20464FFC0087D18E /* GXMediaAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFBFD20464FFC0087D18E /* GXMediaAnimationDelegate.m */; };
+		336AFC0F20464FFC0087D18E /* GXMediaAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFBFD20464FFC0087D18E /* GXMediaAnimationDelegate.m */; };
+		336AFC1020464FFC0087D18E /* GXMediaBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFBFF20464FFC0087D18E /* GXMediaBaseCell.m */; };
+		336AFC1120464FFC0087D18E /* GXMediaBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFBFF20464FFC0087D18E /* GXMediaBaseCell.m */; };
+		336AFC1220464FFC0087D18E /* GXMediaBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFBFF20464FFC0087D18E /* GXMediaBaseCell.m */; };
+		336AFC1320464FFC0087D18E /* GXMediaBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0120464FFC0087D18E /* GXMediaBrowser.m */; };
+		336AFC1420464FFC0087D18E /* GXMediaBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0120464FFC0087D18E /* GXMediaBrowser.m */; };
+		336AFC1520464FFC0087D18E /* GXMediaBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0120464FFC0087D18E /* GXMediaBrowser.m */; };
+		336AFC1620464FFC0087D18E /* GXMediaBrowserLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0420464FFC0087D18E /* GXMediaBrowserLayout.m */; };
+		336AFC1720464FFC0087D18E /* GXMediaBrowserLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0420464FFC0087D18E /* GXMediaBrowserLayout.m */; };
+		336AFC1820464FFC0087D18E /* GXMediaBrowserLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0420464FFC0087D18E /* GXMediaBrowserLayout.m */; };
+		336AFC1920464FFC0087D18E /* GXMediaBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0620464FFC0087D18E /* GXMediaBrowserModel.m */; };
+		336AFC1A20464FFC0087D18E /* GXMediaBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0620464FFC0087D18E /* GXMediaBrowserModel.m */; };
+		336AFC1B20464FFC0087D18E /* GXMediaBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0620464FFC0087D18E /* GXMediaBrowserModel.m */; };
+		336AFC1C20464FFC0087D18E /* GXMediaImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0820464FFC0087D18E /* GXMediaImageCell.m */; };
+		336AFC1D20464FFC0087D18E /* GXMediaImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0820464FFC0087D18E /* GXMediaImageCell.m */; };
+		336AFC1E20464FFC0087D18E /* GXMediaImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0820464FFC0087D18E /* GXMediaImageCell.m */; };
+		336AFC1F20464FFC0087D18E /* GXMediaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0A20464FFC0087D18E /* GXMediaVideoCell.m */; };
+		336AFC2020464FFC0087D18E /* GXMediaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0A20464FFC0087D18E /* GXMediaVideoCell.m */; };
+		336AFC2120464FFC0087D18E /* GXMediaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0A20464FFC0087D18E /* GXMediaVideoCell.m */; };
+		336AFC2220464FFC0087D18E /* UIView+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0C20464FFC0087D18E /* UIView+GXAdd.m */; };
+		336AFC2320464FFC0087D18E /* UIView+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0C20464FFC0087D18E /* UIView+GXAdd.m */; };
+		336AFC2420464FFC0087D18E /* UIView+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFC0C20464FFC0087D18E /* UIView+GXAdd.m */; };
 		33DE6BEF20450201007B0285 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6BEE20450201007B0285 /* AppDelegate.m */; };
 		33DE6BF220450201007B0285 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6BF120450201007B0285 /* ViewController.m */; };
 		33DE6BF520450201007B0285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6BF320450201007B0285 /* Main.storyboard */; };
@@ -16,13 +39,6 @@
 		33DE6BFD20450202007B0285 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6BFC20450202007B0285 /* main.m */; };
 		33DE6C0720450202007B0285 /* GXMediaBrowserSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C0620450202007B0285 /* GXMediaBrowserSampleTests.m */; };
 		33DE6C1220450204007B0285 /* GXMediaBrowserSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C1120450204007B0285 /* GXMediaBrowserSampleUITests.m */; };
-		33DE6C4620450266007B0285 /* GXMediaAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C3820450266007B0285 /* GXMediaAnimationDelegate.m */; };
-		33DE6C4720450266007B0285 /* GXMediaBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C3A20450266007B0285 /* GXMediaBaseCell.m */; };
-		33DE6C4820450266007B0285 /* GXMediaBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C3C20450266007B0285 /* GXMediaBrowser.m */; };
-		33DE6C4920450266007B0285 /* GXMediaBrowserLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C3F20450266007B0285 /* GXMediaBrowserLayout.m */; };
-		33DE6C4A20450266007B0285 /* GXMediaBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4120450266007B0285 /* GXMediaBrowserModel.m */; };
-		33DE6C4B20450266007B0285 /* GXMediaImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4320450266007B0285 /* GXMediaImageCell.m */; };
-		33DE6C4C20450266007B0285 /* GXMediaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4520450266007B0285 /* GXMediaVideoCell.m */; };
 		33DE6C7620450830007B0285 /* GXFooterCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C5E20450830007B0285 /* GXFooterCRView.m */; };
 		33DE6C7720450830007B0285 /* GXFooterCRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C5F20450830007B0285 /* GXFooterCRView.xib */; };
 		33DE6C7820450830007B0285 /* GXHeaderCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C6120450830007B0285 /* GXHeaderCRView.m */; };
@@ -64,8 +80,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		336AFBF820463E080087D18E /* UIView+GXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GXAdd.m"; sourceTree = "<group>"; };
-		336AFBF920463E080087D18E /* UIView+GXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GXAdd.h"; sourceTree = "<group>"; };
+		336AFBFC20464FFC0087D18E /* GXMediaAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaAnimationDelegate.h; sourceTree = "<group>"; };
+		336AFBFD20464FFC0087D18E /* GXMediaAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaAnimationDelegate.m; sourceTree = "<group>"; };
+		336AFBFE20464FFC0087D18E /* GXMediaBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBaseCell.h; sourceTree = "<group>"; };
+		336AFBFF20464FFC0087D18E /* GXMediaBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBaseCell.m; sourceTree = "<group>"; };
+		336AFC0020464FFC0087D18E /* GXMediaBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowser.h; sourceTree = "<group>"; };
+		336AFC0120464FFC0087D18E /* GXMediaBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowser.m; sourceTree = "<group>"; };
+		336AFC0220464FFC0087D18E /* GXMediaBrowserCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserCommon.h; sourceTree = "<group>"; };
+		336AFC0320464FFC0087D18E /* GXMediaBrowserLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserLayout.h; sourceTree = "<group>"; };
+		336AFC0420464FFC0087D18E /* GXMediaBrowserLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserLayout.m; sourceTree = "<group>"; };
+		336AFC0520464FFC0087D18E /* GXMediaBrowserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserModel.h; sourceTree = "<group>"; };
+		336AFC0620464FFC0087D18E /* GXMediaBrowserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserModel.m; sourceTree = "<group>"; };
+		336AFC0720464FFC0087D18E /* GXMediaImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaImageCell.h; sourceTree = "<group>"; };
+		336AFC0820464FFC0087D18E /* GXMediaImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaImageCell.m; sourceTree = "<group>"; };
+		336AFC0920464FFC0087D18E /* GXMediaVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaVideoCell.h; sourceTree = "<group>"; };
+		336AFC0A20464FFC0087D18E /* GXMediaVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaVideoCell.m; sourceTree = "<group>"; };
+		336AFC0B20464FFC0087D18E /* UIView+GXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GXAdd.h"; sourceTree = "<group>"; };
+		336AFC0C20464FFC0087D18E /* UIView+GXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GXAdd.m"; sourceTree = "<group>"; };
 		33DE6BEA20450201007B0285 /* GXMediaBrowserSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXMediaBrowserSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE6BED20450201007B0285 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33DE6BEE20450201007B0285 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,21 +113,6 @@
 		33DE6C0D20450202007B0285 /* GXMediaBrowserSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GXMediaBrowserSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE6C1120450204007B0285 /* GXMediaBrowserSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserSampleUITests.m; sourceTree = "<group>"; };
 		33DE6C1320450204007B0285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33DE6C3720450266007B0285 /* GXMediaAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaAnimationDelegate.h; sourceTree = "<group>"; };
-		33DE6C3820450266007B0285 /* GXMediaAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaAnimationDelegate.m; sourceTree = "<group>"; };
-		33DE6C3920450266007B0285 /* GXMediaBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBaseCell.h; sourceTree = "<group>"; };
-		33DE6C3A20450266007B0285 /* GXMediaBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBaseCell.m; sourceTree = "<group>"; };
-		33DE6C3B20450266007B0285 /* GXMediaBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowser.h; sourceTree = "<group>"; };
-		33DE6C3C20450266007B0285 /* GXMediaBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowser.m; sourceTree = "<group>"; };
-		33DE6C3D20450266007B0285 /* GXMediaBrowserCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserCommon.h; sourceTree = "<group>"; };
-		33DE6C3E20450266007B0285 /* GXMediaBrowserLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserLayout.h; sourceTree = "<group>"; };
-		33DE6C3F20450266007B0285 /* GXMediaBrowserLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserLayout.m; sourceTree = "<group>"; };
-		33DE6C4020450266007B0285 /* GXMediaBrowserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaBrowserModel.h; sourceTree = "<group>"; };
-		33DE6C4120450266007B0285 /* GXMediaBrowserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaBrowserModel.m; sourceTree = "<group>"; };
-		33DE6C4220450266007B0285 /* GXMediaImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaImageCell.h; sourceTree = "<group>"; };
-		33DE6C4320450266007B0285 /* GXMediaImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaImageCell.m; sourceTree = "<group>"; };
-		33DE6C4420450266007B0285 /* GXMediaVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaVideoCell.h; sourceTree = "<group>"; };
-		33DE6C4520450266007B0285 /* GXMediaVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaVideoCell.m; sourceTree = "<group>"; };
 		33DE6C5D20450830007B0285 /* GXFooterCRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXFooterCRView.h; sourceTree = "<group>"; };
 		33DE6C5E20450830007B0285 /* GXFooterCRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFooterCRView.m; sourceTree = "<group>"; };
 		33DE6C5F20450830007B0285 /* GXFooterCRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXFooterCRView.xib; sourceTree = "<group>"; };
@@ -161,6 +177,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		336AFBFB20464FFC0087D18E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				336AFBFC20464FFC0087D18E /* GXMediaAnimationDelegate.h */,
+				336AFBFD20464FFC0087D18E /* GXMediaAnimationDelegate.m */,
+				336AFBFE20464FFC0087D18E /* GXMediaBaseCell.h */,
+				336AFBFF20464FFC0087D18E /* GXMediaBaseCell.m */,
+				336AFC0020464FFC0087D18E /* GXMediaBrowser.h */,
+				336AFC0120464FFC0087D18E /* GXMediaBrowser.m */,
+				336AFC0220464FFC0087D18E /* GXMediaBrowserCommon.h */,
+				336AFC0320464FFC0087D18E /* GXMediaBrowserLayout.h */,
+				336AFC0420464FFC0087D18E /* GXMediaBrowserLayout.m */,
+				336AFC0520464FFC0087D18E /* GXMediaBrowserModel.h */,
+				336AFC0620464FFC0087D18E /* GXMediaBrowserModel.m */,
+				336AFC0720464FFC0087D18E /* GXMediaImageCell.h */,
+				336AFC0820464FFC0087D18E /* GXMediaImageCell.m */,
+				336AFC0920464FFC0087D18E /* GXMediaVideoCell.h */,
+				336AFC0A20464FFC0087D18E /* GXMediaVideoCell.m */,
+				336AFC0B20464FFC0087D18E /* UIView+GXAdd.h */,
+				336AFC0C20464FFC0087D18E /* UIView+GXAdd.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
 		33DE6BE120450201007B0285 = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +227,7 @@
 		33DE6BEC20450201007B0285 /* GXMediaBrowserSample */ = {
 			isa = PBXGroup;
 			children = (
-				33DE6C3620450266007B0285 /* GXMediaBrowser */,
+				336AFBFB20464FFC0087D18E /* Classes */,
 				33DE6C5C20450830007B0285 /* UICollectionView */,
 				33DE6BED20450201007B0285 /* AppDelegate.h */,
 				33DE6BEE20450201007B0285 /* AppDelegate.m */,
@@ -217,31 +258,6 @@
 				33DE6C1320450204007B0285 /* Info.plist */,
 			);
 			path = GXMediaBrowserSampleUITests;
-			sourceTree = "<group>";
-		};
-		33DE6C3620450266007B0285 /* GXMediaBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				336AFBF920463E080087D18E /* UIView+GXAdd.h */,
-				336AFBF820463E080087D18E /* UIView+GXAdd.m */,
-				33DE6C3D20450266007B0285 /* GXMediaBrowserCommon.h */,
-				33DE6C3720450266007B0285 /* GXMediaAnimationDelegate.h */,
-				33DE6C3820450266007B0285 /* GXMediaAnimationDelegate.m */,
-				33DE6C3B20450266007B0285 /* GXMediaBrowser.h */,
-				33DE6C3C20450266007B0285 /* GXMediaBrowser.m */,
-				33DE6C3E20450266007B0285 /* GXMediaBrowserLayout.h */,
-				33DE6C3F20450266007B0285 /* GXMediaBrowserLayout.m */,
-				33DE6C4020450266007B0285 /* GXMediaBrowserModel.h */,
-				33DE6C4120450266007B0285 /* GXMediaBrowserModel.m */,
-				33DE6C3920450266007B0285 /* GXMediaBaseCell.h */,
-				33DE6C3A20450266007B0285 /* GXMediaBaseCell.m */,
-				33DE6C4220450266007B0285 /* GXMediaImageCell.h */,
-				33DE6C4320450266007B0285 /* GXMediaImageCell.m */,
-				33DE6C4420450266007B0285 /* GXMediaVideoCell.h */,
-				33DE6C4520450266007B0285 /* GXMediaVideoCell.m */,
-			);
-			name = GXMediaBrowser;
-			path = ../../GXMediaBrowser;
 			sourceTree = "<group>";
 		};
 		33DE6C5C20450830007B0285 /* UICollectionView */ = {
@@ -494,21 +510,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336AFC1920464FFC0087D18E /* GXMediaBrowserModel.m in Sources */,
+				336AFC1620464FFC0087D18E /* GXMediaBrowserLayout.m in Sources */,
 				33DE6BF220450201007B0285 /* ViewController.m in Sources */,
-				33DE6C4C20450266007B0285 /* GXMediaVideoCell.m in Sources */,
 				33DE6C7C20450830007B0285 /* GXWaterViewController.m in Sources */,
 				33DE6BFD20450202007B0285 /* main.m in Sources */,
-				33DE6C4820450266007B0285 /* GXMediaBrowser.m in Sources */,
-				33DE6C4B20450266007B0285 /* GXMediaImageCell.m in Sources */,
+				336AFC1C20464FFC0087D18E /* GXMediaImageCell.m in Sources */,
 				33DE6C7620450830007B0285 /* GXFooterCRView.m in Sources */,
 				33DE6BEF20450201007B0285 /* AppDelegate.m in Sources */,
-				33DE6C4A20450266007B0285 /* GXMediaBrowserModel.m in Sources */,
+				336AFC1020464FFC0087D18E /* GXMediaBaseCell.m in Sources */,
+				336AFC1F20464FFC0087D18E /* GXMediaVideoCell.m in Sources */,
+				336AFC1320464FFC0087D18E /* GXMediaBrowser.m in Sources */,
 				33DE6C7820450830007B0285 /* GXHeaderCRView.m in Sources */,
 				33DE6C7A20450830007B0285 /* GXWaterCVCell.m in Sources */,
-				33DE6C4920450266007B0285 /* GXMediaBrowserLayout.m in Sources */,
-				33DE6C4620450266007B0285 /* GXMediaAnimationDelegate.m in Sources */,
-				336AFBFA20463E090087D18E /* UIView+GXAdd.m in Sources */,
-				33DE6C4720450266007B0285 /* GXMediaBaseCell.m in Sources */,
+				336AFC2220464FFC0087D18E /* UIView+GXAdd.m in Sources */,
+				336AFC0D20464FFC0087D18E /* GXMediaAnimationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +532,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336AFC1A20464FFC0087D18E /* GXMediaBrowserModel.m in Sources */,
 				33DE6C0720450202007B0285 /* GXMediaBrowserSampleTests.m in Sources */,
+				336AFC0E20464FFC0087D18E /* GXMediaAnimationDelegate.m in Sources */,
+				336AFC2020464FFC0087D18E /* GXMediaVideoCell.m in Sources */,
+				336AFC2320464FFC0087D18E /* UIView+GXAdd.m in Sources */,
+				336AFC1420464FFC0087D18E /* GXMediaBrowser.m in Sources */,
+				336AFC1720464FFC0087D18E /* GXMediaBrowserLayout.m in Sources */,
+				336AFC1120464FFC0087D18E /* GXMediaBaseCell.m in Sources */,
+				336AFC1D20464FFC0087D18E /* GXMediaImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +548,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336AFC1B20464FFC0087D18E /* GXMediaBrowserModel.m in Sources */,
 				33DE6C1220450204007B0285 /* GXMediaBrowserSampleUITests.m in Sources */,
+				336AFC0F20464FFC0087D18E /* GXMediaAnimationDelegate.m in Sources */,
+				336AFC2120464FFC0087D18E /* GXMediaVideoCell.m in Sources */,
+				336AFC2420464FFC0087D18E /* UIView+GXAdd.m in Sources */,
+				336AFC1520464FFC0087D18E /* GXMediaBrowser.m in Sources */,
+				336AFC1820464FFC0087D18E /* GXMediaBrowserLayout.m in Sources */,
+				336AFC1220464FFC0087D18E /* GXMediaBaseCell.m in Sources */,
+				336AFC1E20464FFC0087D18E /* GXMediaImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
