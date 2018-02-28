@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336AFBF7204639070087D18E /* UIView+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 336AFBF5204639070087D18E /* UIView+GXAdd.m */; };
 		33DE6BEF20450201007B0285 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6BEE20450201007B0285 /* AppDelegate.m */; };
 		33DE6BF220450201007B0285 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6BF120450201007B0285 /* ViewController.m */; };
 		33DE6BF520450201007B0285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6BF320450201007B0285 /* Main.storyboard */; };
@@ -22,7 +23,6 @@
 		33DE6C4A20450266007B0285 /* GXMediaBrowserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4120450266007B0285 /* GXMediaBrowserModel.m */; };
 		33DE6C4B20450266007B0285 /* GXMediaImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4320450266007B0285 /* GXMediaImageCell.m */; };
 		33DE6C4C20450266007B0285 /* GXMediaVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C4520450266007B0285 /* GXMediaVideoCell.m */; };
-		33DE6C5420450503007B0285 /* UIView+GXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C5020450503007B0285 /* UIView+GXAdd.m */; };
 		33DE6C7620450830007B0285 /* GXFooterCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C5E20450830007B0285 /* GXFooterCRView.m */; };
 		33DE6C7720450830007B0285 /* GXFooterCRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C5F20450830007B0285 /* GXFooterCRView.xib */; };
 		33DE6C7820450830007B0285 /* GXHeaderCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DE6C6120450830007B0285 /* GXHeaderCRView.m */; };
@@ -64,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		336AFBF5204639070087D18E /* UIView+GXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GXAdd.m"; sourceTree = "<group>"; };
+		336AFBF6204639070087D18E /* UIView+GXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GXAdd.h"; sourceTree = "<group>"; };
 		33DE6BEA20450201007B0285 /* GXMediaBrowserSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXMediaBrowserSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DE6BED20450201007B0285 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33DE6BEE20450201007B0285 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,8 +97,6 @@
 		33DE6C4320450266007B0285 /* GXMediaImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaImageCell.m; sourceTree = "<group>"; };
 		33DE6C4420450266007B0285 /* GXMediaVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXMediaVideoCell.h; sourceTree = "<group>"; };
 		33DE6C4520450266007B0285 /* GXMediaVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXMediaVideoCell.m; sourceTree = "<group>"; };
-		33DE6C5020450503007B0285 /* UIView+GXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GXAdd.m"; sourceTree = "<group>"; };
-		33DE6C5120450503007B0285 /* UIView+GXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GXAdd.h"; sourceTree = "<group>"; };
 		33DE6C5D20450830007B0285 /* GXFooterCRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXFooterCRView.h; sourceTree = "<group>"; };
 		33DE6C5E20450830007B0285 /* GXFooterCRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFooterCRView.m; sourceTree = "<group>"; };
 		33DE6C5F20450830007B0285 /* GXFooterCRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXFooterCRView.xib; sourceTree = "<group>"; };
@@ -222,7 +222,8 @@
 		33DE6C3620450266007B0285 /* GXMediaBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				33DE6C4E20450471007B0285 /* Categories */,
+				336AFBF6204639070087D18E /* UIView+GXAdd.h */,
+				336AFBF5204639070087D18E /* UIView+GXAdd.m */,
 				33DE6C3D20450266007B0285 /* GXMediaBrowserCommon.h */,
 				33DE6C3720450266007B0285 /* GXMediaAnimationDelegate.h */,
 				33DE6C3820450266007B0285 /* GXMediaAnimationDelegate.m */,
@@ -241,15 +242,6 @@
 			);
 			name = GXMediaBrowser;
 			path = ../../GXMediaBrowser;
-			sourceTree = "<group>";
-		};
-		33DE6C4E20450471007B0285 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				33DE6C5120450503007B0285 /* UIView+GXAdd.h */,
-				33DE6C5020450503007B0285 /* UIView+GXAdd.m */,
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 		33DE6C5C20450830007B0285 /* UICollectionView */ = {
@@ -503,7 +495,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				33DE6BF220450201007B0285 /* ViewController.m in Sources */,
-				33DE6C5420450503007B0285 /* UIView+GXAdd.m in Sources */,
 				33DE6C4C20450266007B0285 /* GXMediaVideoCell.m in Sources */,
 				33DE6C7C20450830007B0285 /* GXWaterViewController.m in Sources */,
 				33DE6BFD20450202007B0285 /* main.m in Sources */,
@@ -516,6 +507,7 @@
 				33DE6C7A20450830007B0285 /* GXWaterCVCell.m in Sources */,
 				33DE6C4920450266007B0285 /* GXMediaBrowserLayout.m in Sources */,
 				33DE6C4620450266007B0285 /* GXMediaAnimationDelegate.m in Sources */,
+				336AFBF7204639070087D18E /* UIView+GXAdd.m in Sources */,
 				33DE6C4720450266007B0285 /* GXMediaBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
