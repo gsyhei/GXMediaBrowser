@@ -18,7 +18,7 @@ static NSString* GXSectionHeaderID = @"GXSectionHeaderID";
 static NSString* GXSectionFooterID = @"GXSectionFooterID";
 static NSString* GXSectionCellID   = @"GXSectionCellID";
 
-@interface GXWaterViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface GXWaterViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, GXMediaBrowserDelegate>
 @property (strong, nonatomic) UICollectionView *waterCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *flowLayout;
 @property (strong, nonatomic) NSMutableArray<NSMutableArray*> *imageArr;
@@ -195,16 +195,19 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
 //    browser.delegate = self;
     browser.currentPage = index;
     
-    /*** 带不带UINavigationController都行 ****/
+    // 不带UINavigationController的时候应该这样写
 //    browser.transitioningDelegate = self.mediaAnimationDelegate;
 //    browser.modalPresentationStyle = UIModalPresentationCustom;
 //    [self presentViewController:browser animated:YES completion:nil];
     
+    // 带UINavigationController的时候应该这样写
     UINavigationController *navigationC = [[UINavigationController alloc] initWithRootViewController:browser];
     navigationC.transitioningDelegate = self.mediaAnimationDelegate;
     navigationC.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:navigationC animated:YES completion:nil];
 }
+
+#pragma mark - GXMediaBrowserDelegate
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -215,9 +215,9 @@
     annimateViwe.contentMode = UIViewContentModeScaleAspectFill;
     annimateViwe.clipsToBounds = YES;
     [containerView addSubview:annimateViwe];
+        
     
-    
-    /*********************普通视图弹出*******************/
+    /******************** dismiss到普通视图 ******************/
     if (!self.collectionView && !self.indexPath) {
         // 被选中的view的rect（默认show和hide都是同一个固定的rect）
         CGRect originFrame = [destinationController.delegate rectBackCellWithMediaBrowser:destinationController];
@@ -234,9 +234,8 @@
          }];
         return;
     }
-    /************************************************/
     
-
+    /********************* dismiss到UICollectionView *************/
     // 动画最后停止的frame
     NSIndexPath *indexPath = [destinationController currentMediaModel].indexPath;
     // 取出要返回的控制器view
