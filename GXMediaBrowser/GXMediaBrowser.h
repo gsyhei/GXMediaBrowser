@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "GXMediaBrowserModel.h"
 #import "GXMediaBrowserCommon.h"
+#import "GXMediaAnimationDelegate.h"
 
 @class GXMediaBrowser;
 @protocol GXMediaBrowserDelegate <NSObject>
 @optional
-// 获取退出后对应的CGRect（当GXMediaAnimationDelegate中的UICollectionView传nil时使用）
-- (CGRect)rectBackCellWithMediaBrowser:(GXMediaBrowser*)mediaBrowser;
 // 视频播放按钮接口
 - (void)mediaBrowser:(GXMediaBrowser *)mediaBrowser atPlayModel:(GXMediaBrowserModel*)model;
 @end

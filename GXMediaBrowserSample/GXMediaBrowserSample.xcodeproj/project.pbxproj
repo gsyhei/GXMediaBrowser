@@ -43,6 +43,9 @@
 		33DE6C8720450830007B0285 /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7320450830007B0285 /* 7.jpeg */; };
 		33DE6C8820450830007B0285 /* 8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7420450830007B0285 /* 8.jpeg */; };
 		33DE6C8920450830007B0285 /* 9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33DE6C7520450830007B0285 /* 9.jpeg */; };
+		33E7D71C20C068DE000A6DDB /* GXUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E7D71A20C068DE000A6DDB /* GXUserViewController.m */; };
+		33E7D71D20C068DE000A6DDB /* GXUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E7D71B20C068DE000A6DDB /* GXUserViewController.xib */; };
+		33E7D71F20C07D91000A6DDB /* avatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33E7D71E20C07D91000A6DDB /* avatar.jpeg */; };
 		F417B100DE2F90F3DC7BF2EA /* libPods-GXMediaBrowserSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD32BED00E970DF0CC3E6097 /* libPods-GXMediaBrowserSample.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +124,10 @@
 		33DE6C7320450830007B0285 /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpeg; sourceTree = "<group>"; };
 		33DE6C7420450830007B0285 /* 8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpeg; sourceTree = "<group>"; };
 		33DE6C7520450830007B0285 /* 9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpeg; sourceTree = "<group>"; };
+		33E7D71920C068DE000A6DDB /* GXUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXUserViewController.h; sourceTree = "<group>"; };
+		33E7D71A20C068DE000A6DDB /* GXUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXUserViewController.m; sourceTree = "<group>"; };
+		33E7D71B20C068DE000A6DDB /* GXUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXUserViewController.xib; sourceTree = "<group>"; };
+		33E7D71E20C07D91000A6DDB /* avatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpeg; sourceTree = "<group>"; };
 		3B900A9CDC8DD1E46FF53010 /* Pods-GXMediaBrowserSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXMediaBrowserSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXMediaBrowserSample/Pods-GXMediaBrowserSample.debug.xcconfig"; sourceTree = "<group>"; };
 		5D1B7D233D0ACA7A59E2AAE0 /* Pods-GXMediaBrowserSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXMediaBrowserSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXMediaBrowserSample/Pods-GXMediaBrowserSample.release.xcconfig"; sourceTree = "<group>"; };
 		BD32BED00E970DF0CC3E6097 /* libPods-GXMediaBrowserSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXMediaBrowserSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +224,11 @@
 				33DE6BEE20450201007B0285 /* AppDelegate.m */,
 				33DE6BF020450201007B0285 /* ViewController.h */,
 				33DE6BF120450201007B0285 /* ViewController.m */,
+				33DE6C6620450830007B0285 /* GXWaterViewController.h */,
+				33DE6C6720450830007B0285 /* GXWaterViewController.m */,
+				33E7D71920C068DE000A6DDB /* GXUserViewController.h */,
+				33E7D71A20C068DE000A6DDB /* GXUserViewController.m */,
+				33E7D71B20C068DE000A6DDB /* GXUserViewController.xib */,
 				33DE6BF320450201007B0285 /* Main.storyboard */,
 				33DE6BF620450202007B0285 /* Assets.xcassets */,
 				33DE6BF820450202007B0285 /* LaunchScreen.storyboard */,
@@ -256,8 +268,6 @@
 				33DE6C6320450830007B0285 /* GXWaterCVCell.h */,
 				33DE6C6420450830007B0285 /* GXWaterCVCell.m */,
 				33DE6C6520450830007B0285 /* GXWaterCVCell.xib */,
-				33DE6C6620450830007B0285 /* GXWaterViewController.h */,
-				33DE6C6720450830007B0285 /* GXWaterViewController.m */,
 				33DE6C6820450830007B0285 /* image */,
 			);
 			path = UICollectionView;
@@ -266,6 +276,7 @@
 		33DE6C6820450830007B0285 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				33E7D71E20C07D91000A6DDB /* avatar.jpeg */,
 				33DE6C6920450830007B0285 /* 0.jpeg */,
 				33DE6C6A20450830007B0285 /* 1.jpeg */,
 				33DE6C6B20450830007B0285 /* 10.jpeg */,
@@ -408,6 +419,7 @@
 				33DE6C7B20450830007B0285 /* GXWaterCVCell.xib in Resources */,
 				33DE6C8420450830007B0285 /* 4.jpeg in Resources */,
 				33DE6C8520450830007B0285 /* 5.jpeg in Resources */,
+				33E7D71F20C07D91000A6DDB /* avatar.jpeg in Resources */,
 				33DE6C8120450830007B0285 /* 12.jpeg in Resources */,
 				33DE6C8720450830007B0285 /* 7.jpeg in Resources */,
 				33DE6C7F20450830007B0285 /* 10.jpeg in Resources */,
@@ -418,6 +430,7 @@
 				33DE6C8820450830007B0285 /* 8.jpeg in Resources */,
 				33DE6BF720450202007B0285 /* Assets.xcassets in Resources */,
 				33DE6BF520450201007B0285 /* Main.storyboard in Resources */,
+				33E7D71D20C068DE000A6DDB /* GXUserViewController.xib in Resources */,
 				33DE6C8020450830007B0285 /* 11.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +521,7 @@
 				33DE6C7820450830007B0285 /* GXHeaderCRView.m in Sources */,
 				33DE6C7A20450830007B0285 /* GXWaterCVCell.m in Sources */,
 				33AA95EF2047A69800B7D814 /* UIView+GXAdd.m in Sources */,
+				33E7D71C20C068DE000A6DDB /* GXUserViewController.m in Sources */,
 				33AA95E82047A69800B7D814 /* GXMediaAnimationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

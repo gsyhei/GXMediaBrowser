@@ -12,7 +12,6 @@
 #import "GXHeaderCRView.h"
 #import "GXFooterCRView.h"
 #import "GXMediaBrowser.h"
-#import "GXMediaAnimationDelegate.h"
 
 static NSString* GXSectionHeaderID = @"GXSectionHeaderID";
 static NSString* GXSectionFooterID = @"GXSectionFooterID";

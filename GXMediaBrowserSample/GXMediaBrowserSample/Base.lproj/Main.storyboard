@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DaT-Mm-9aU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DaT-Mm-9aU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Browser-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -22,26 +22,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb4-a8-Urv">
-                                <rect key="frame" x="129" y="308" width="117" height="50"/>
+                                <rect key="frame" x="130" y="278.5" width="115" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="SV4-yY-8ND"/>
                                     <constraint firstAttribute="height" constant="50" id="mhJ-qJ-cIQ"/>
                                 </constraints>
-                                <state key="normal" title="图片浏览器Demo"/>
+                                <state key="normal" title="Demo1-图片浏览"/>
                                 <connections>
-                                    <action selector="startButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fh6-Ip-smc"/>
+                                    <action selector="demo1ButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xFC-Vu-xCa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6p-YW-lIJ">
+                                <rect key="frame" x="128.5" y="338.5" width="118" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZME-s1-rDk"/>
+                                </constraints>
+                                <state key="normal" title="Demo2-头像浏览"/>
+                                <connections>
+                                    <action selector="demo2ButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KIe-dg-6eZ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yb4-a8-Urv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uxi-lp-cKj"/>
+                            <constraint firstItem="yb4-a8-Urv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="uxi-lp-cKj"/>
+                            <constraint firstItem="S6p-YW-lIJ" firstAttribute="centerX" secondItem="yb4-a8-Urv" secondAttribute="centerX" id="uyS-Yg-v9Z"/>
                             <constraint firstItem="yb4-a8-Urv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wZv-zU-GKc"/>
+                            <constraint firstItem="S6p-YW-lIJ" firstAttribute="top" secondItem="yb4-a8-Urv" secondAttribute="bottom" constant="10" id="x2S-Hx-K8A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TXC-Sj-ZPb"/>
+                    <navigationItem key="navigationItem" title="Browser" prompt="Gin" id="TXC-Sj-ZPb"/>
                     <connections>
-                        <outlet property="startButton" destination="yb4-a8-Urv" id="zwT-YQ-fwp"/>
+                        <outlet property="demo1Button" destination="yb4-a8-Urv" id="Xuq-Ek-rSK"/>
+                        <outlet property="demo2Button" destination="S6p-YW-lIJ" id="3k7-G4-dZj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

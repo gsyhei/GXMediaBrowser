@@ -119,15 +119,18 @@
     }
     destinationController.collectionView.hidden = YES;
     
-    
-    /*********************普通视图弹出*******************/
+    /*** 下面列出两种情况 ***/
+    /// 1.pop到普通视图
     if (!self.collectionView || !self.indexPath) {
         // 新建一个imageview添加到目标view之上,做为动画view
         UIImageView *annimateViwe = [[UIImageView alloc] initWithImage:self.selectedImage];
         annimateViwe.contentMode = UIViewContentModeScaleAspectFill;
         annimateViwe.clipsToBounds = YES;
         // 被选中的view的rect（默认show和hide都是同一个固定的rect）
-        CGRect originFrame = [destinationController.delegate rectBackCellWithMediaBrowser:destinationController];
+        CGRect originFrame = CGRectZero;
+        if (self.dataSource && [self.dataSource respondsToSelector:@selector(popFromRect)]) {
+            originFrame = self.dataSource.popFromRect;
+        }
         annimateViwe.frame = originFrame;
         [containerView addSubview:annimateViwe];
         CGRect endFrame = coverImageFrameToFullScreenFrame(self.selectedImage);
@@ -150,9 +153,8 @@
          }];
         return;
     }
-    /************************************************/
     
-    
+    /// 2.pop到UICollectionView
     // 当前选中的cell
     UICollectionViewCell *selectctedCell = [self.collectionView cellForItemAtIndexPath:self.indexPath];
     // 新建一个imageview添加到目标view之上,做为动画view
@@ -215,18 +217,23 @@
     annimateViwe.contentMode = UIViewContentModeScaleAspectFill;
     annimateViwe.clipsToBounds = YES;
     [containerView addSubview:annimateViwe];
-        
     
-    /******************** dismiss到普通视图 ******************/
+    /*** 下面列出两种情况 ***/
+    /// 1.dismiss到普通视图
     if (!self.collectionView && !self.indexPath) {
         // 被选中的view的rect（默认show和hide都是同一个固定的rect）
-        CGRect originFrame = [destinationController.delegate rectBackCellWithMediaBrowser:destinationController];
+        CGRect backFrame = CGRectZero;
+        if (self.dataSource && [self.dataSource respondsToSelector:@selector(backToRect)]) {
+            backFrame = self.dataSource.backToRect;
+        } else if (self.dataSource && [self.dataSource respondsToSelector:@selector(popFromRect)]) {
+            backFrame = self.dataSource.popFromRect;
+        }
         // 过渡动画执行
         [UIView animateWithDuration:GX_AnimationSpringDuration delay:0
              usingSpringWithDamping:GX_UsingSpringWithDamping
               initialSpringVelocity:GX_InitialSpringVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^
          {
-             annimateViwe.frame = originFrame;
+             annimateViwe.frame = backFrame;
              transitionView.alpha = 0.0;
          } completion:^(BOOL finished) {
              [annimateViwe removeFromSuperview];
@@ -235,7 +242,7 @@
         return;
     }
     
-    /********************* dismiss到UICollectionView *************/
+    /// 2.dismiss到UICollectionView
     // 动画最后停止的frame
     NSIndexPath *indexPath = [destinationController currentMediaModel].indexPath;
     // 取出要返回的控制器view
