@@ -35,7 +35,6 @@
     UIImage *selectImage = self.avatarButton.currentImage;
     [self.mediaAnimationDelegate configureTransition:self collectionView:nil
                                  transitionIndexPath:nil transitionImage:selectImage];
-    self.mediaAnimationDelegate.isNavigationPush = NO;
     self.mediaAnimationDelegate.dataSource = self;
     
     GXMediaBrowserModel *model = [GXMediaBrowserModel modelAnyImageObjWith:selectImage];

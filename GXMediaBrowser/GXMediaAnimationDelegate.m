@@ -190,6 +190,10 @@
     UIView *transitionView = [transitionContext viewForKey:UITransitionContextFromViewKey];
     UIView *containerView  = [transitionContext containerView];
     
+    if (self.isNavigationPush) {
+        UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+        [containerView addSubview:toVC.view];
+    }
     // 目标控制器
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     // 判断是否为UINavigationController

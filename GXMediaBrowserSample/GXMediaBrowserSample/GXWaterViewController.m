@@ -173,6 +173,7 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
     [self.mediaAnimationDelegate configureTransition:self collectionView:self.waterCollectionView
                             transitionIndexPath:indexPath transitionImage:selectImage];
     self.mediaAnimationDelegate.isNavigationPush = NO;
+    
     NSInteger index = 0;
     NSMutableArray<GXMediaBrowserModel*> *modelArray = [NSMutableArray array];
     NSInteger sectionCount = self.imageArr.count;
@@ -193,7 +194,7 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
     GXMediaBrowser *browser = [[GXMediaBrowser alloc] initWithImagePhotos:modelArray];
 //    browser.delegate = self;
     browser.currentPage = index;
-    
+    browser.backBarItem = @"返回";
     // 不带UINavigationController的时候应该这样写
 //    browser.transitioningDelegate = self.mediaAnimationDelegate;
 //    browser.modalPresentationStyle = UIModalPresentationCustom;

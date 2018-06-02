@@ -26,6 +26,8 @@
 
 @property (nonatomic, assign) NSInteger currentPage;
 
+@property (nonatomic,   copy) id backBarItem;
+
 @property (nonatomic,   weak) id<GXMediaBrowserDelegate> delegate;
 
 - (id)initWithImagePhotos:(NSArray<GXMediaBrowserModel*>*)photoArray;

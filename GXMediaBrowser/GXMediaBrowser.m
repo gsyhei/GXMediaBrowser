@@ -57,7 +57,16 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     self.view.backgroundColor = GX_BACKGROUND_COLOR;
-    
+    if (self.backBarItem) {
+        if ([self.backBarItem isKindOfClass:[NSString class]]) {
+            self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:self.backBarItem style:UIBarButtonItemStylePlain target:self action:@selector(backBarItemTapped:)];
+        } else if ([self.backBarItem isKindOfClass:[UIImage class]]) {
+            self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:self.backBarItem style:UIBarButtonItemStylePlain target:self action:@selector(backBarItemTapped:)];
+        } else if ([self.backBarItem isKindOfClass:[UIBarButtonItem class]]) {
+            self.navigationItem.leftBarButtonItem = self.backBarItem;
+        }
+    }
+
     CGRect rect = CGRectMake(0.0f, 0.0f, SCREEN_WIDTH + GX_PageGap, SCREEN_HEIGHT);
     GXMediaBrowserLayout *layout = [[GXMediaBrowserLayout alloc] initWithItemSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT)];
     _browserLayout = layout;
@@ -74,6 +83,12 @@
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
     [self.view addGestureRecognizer:pan];
+}
+
+- (void)backBarItemTapped:(id)sender {
+    if (![self.navigationController popViewControllerAnimated:YES]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
 }
 
 #pragma mark - UIContentContainer
@@ -304,8 +319,12 @@
 #pragma mark - GXMediaCellDelegate
 
 - (void)didTapWithMediaBaseCell:(GXMediaBaseCell *)cell {
-    BOOL navigationHidden = !self.navigationController.navigationBarHidden;
-    [self.navigationController setNavigationBarHidden:navigationHidden animated:YES];
+    if (self.navigationController) {
+        BOOL navigationHidden = !self.navigationController.navigationBarHidden;
+        [self.navigationController setNavigationBarHidden:navigationHidden animated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
 }
 
 - (void)mediaVideoCell:(GXMediaBaseCell *)cell didPlayButton:(UIButton *)button {
