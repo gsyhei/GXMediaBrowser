@@ -26,16 +26,14 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = "GXMediaBrowser/GXMediaBrowser*.{h,m}"
 
-s.subspec "SDWebImage" do |ss|
-    ss.dependency "SDWebImage", "~> 3.8.0"
+  s.subspec "SDWebImage" do |ss|
+    ss.dependency  'SDWebImage', '~> 3.8.0'
     ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/SDWebImage"}
-end
+  end
 
-s.subspec "DACircularProgress" do |ss|
-    ss.dependency "DACircularProgress", "~> 2.3.0"
+  s.subspec "DACircularProgress" do |ss|
+    ss.dependency 'DACircularProgress', '~> 2.3.0'
     ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/DACircularProgress"}
-end
-  #s.dependency     'DACircularProgress', '~> 2.3.0'
-  #s.dependency     'SDWebImage', '~> 3.8.0'
+  end
 
 end

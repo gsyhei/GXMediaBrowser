@@ -6,8 +6,7 @@
 //  Copyright © 2018年 protruly. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "GXMediaBrowserCommon.h"
+#import <UIKit/UIKit.h>
 
 /**
  *  如果为UICollectionView类型的相册预览可以不用设置这个代理
