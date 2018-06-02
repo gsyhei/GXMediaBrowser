@@ -25,7 +25,17 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/gsyhei/GXMediaBrowser.git", :tag => "0.0.1" }
   s.requires_arc = true
   s.source_files = "GXMediaBrowser/GXMediaBrowser*.{h,m}"
-  s.dependency     'DACircularProgress', '~> 2.3.0'
-  s.dependency     'SDWebImage', '~> 3.8.0'
+
+s.subspec "SDWebImage" do |ss|
+    ss.dependency "SDWebImage", "~> 3.8.0"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/SDWebImage"}
+end
+
+s.subspec "DACircularProgress" do |ss|
+    ss.dependency "DACircularProgress", "~> 2.3.0"
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/DACircularProgress"}
+end
+  #s.dependency     'DACircularProgress', '~> 2.3.0'
+  #s.dependency     'SDWebImage', '~> 3.8.0'
 
 end

@@ -10,8 +10,6 @@
 #import "GXMediaBrowserModel.h"
 #import "GXMediaBrowserCommon.h"
 #import "GXMediaAnimationDelegate.h"
-#import "GXMediaImageCell.h"
-#import "GXMediaVideoCell.h"
 
 @class GXMediaBrowser;
 @protocol GXMediaBrowserDelegate <NSObject>
