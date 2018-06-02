@@ -7,7 +7,6 @@
 //
 
 #import "GXMediaBaseCell.h"
-#import "DALabeledCircularProgressView.h"
 
 @interface GXMediaImageCell : GXMediaBaseCell
 

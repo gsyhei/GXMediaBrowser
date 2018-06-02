@@ -10,6 +10,7 @@
 #import "UIView+GXAdd.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/SDWebImageManager.h>
+#import <DACircularProgress/DACircularProgressView.h>
 
 @interface GXMediaImageCell ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView           *scrollView;
