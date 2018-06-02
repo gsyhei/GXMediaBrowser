@@ -10,7 +10,6 @@
 #import "GXMediaImageCell.h"
 #import "GXMediaVideoCell.h"
 #import "GXMediaBrowserLayout.h"
-#import "GXMediaAnimationDelegate.h"
 #import "UIView+GXAdd.h"
 
 @interface GXMediaBrowser ()<UICollectionViewDataSource,UICollectionViewDelegate,GXMediaCellDelegate>
