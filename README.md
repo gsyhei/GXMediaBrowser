@@ -1,8 +1,6 @@
 # GXMediaBrowser
 一个比较好用的图片浏览器
 
-# 打个广告：9年编程经验（其中6年iOS）有没有人要啊QQ：279694479
-
 Requirements
 --
 - iOS 7.0 or later
