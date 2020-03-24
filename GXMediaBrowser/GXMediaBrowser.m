@@ -7,7 +7,6 @@
 //
 
 #import "GXMediaBrowser.h"
-#import "GXMediaAnimationDelegate.h"
 #import "GXMediaImageCell.h"
 #import "GXMediaVideoCell.h"
 #import "GXMediaBrowserLayout.h"

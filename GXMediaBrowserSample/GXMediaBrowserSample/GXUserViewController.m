@@ -9,7 +9,6 @@
 #import "GXUserViewController.h"
 #import "UIView+GXAdd.h"
 #import "GXMediaBrowser.h"
-#import "GXMediaAnimationDelegate.h"
 
 @interface GXUserViewController ()<GXMediaAnimationTransitionDataSource>
 @property (nonatomic, weak) IBOutlet UIButton *avatarButton;
@@ -22,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"码农是不看美女的";
-    [self.avatarButton styleCircle];
+//    [self.avatarButton styleCircle];
     _mediaAnimationDelegate = [[GXMediaAnimationDelegate alloc] init];
 }
 
@@ -58,6 +57,10 @@
 
 - (CGRect)popFromRect {
     return self.avatarButton.frame;
+}
+
+- (UIView *)formImageView {
+    return self.avatarButton;
 }
 
 @end

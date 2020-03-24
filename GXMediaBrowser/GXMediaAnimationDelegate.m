@@ -131,6 +131,9 @@
         if (self.dataSource && [self.dataSource respondsToSelector:@selector(popFromRect)]) {
             originFrame = self.dataSource.popFromRect;
         }
+        if (self.dataSource && [self.dataSource respondsToSelector:@selector(formImageView)]) {
+            self.dataSource.formImageView.hidden = YES;
+        }
         annimateViwe.frame = originFrame;
         [containerView addSubview:annimateViwe];
         CGRect endFrame = coverImageFrameToFullScreenFrame(self.selectedImage);
@@ -232,6 +235,11 @@
         } else if (self.dataSource && [self.dataSource respondsToSelector:@selector(popFromRect)]) {
             backFrame = self.dataSource.popFromRect;
         }
+        UIView *imageView = nil;
+        if (self.dataSource && [self.dataSource respondsToSelector:@selector(formImageView)]) {
+            imageView = self.dataSource.formImageView;
+        }
+        
         // 过渡动画执行
         [UIView animateWithDuration:GX_AnimationSpringDuration delay:0
              usingSpringWithDamping:GX_UsingSpringWithDamping
@@ -240,6 +248,7 @@
              annimateViwe.frame = backFrame;
              transitionView.alpha = 0.0;
          } completion:^(BOOL finished) {
+             imageView.hidden = NO;
              [annimateViwe removeFromSuperview];
              [transitionContext completeTransition:YES];
          }];

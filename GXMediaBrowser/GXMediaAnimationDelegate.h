@@ -16,6 +16,7 @@
 @optional
 @property (nonatomic, assign) CGRect popFromRect;
 @property (nonatomic, assign) CGRect backToRect;
+@property (nonatomic,   weak) UIView *formImageView;
 @end
 
 NS_ASSUME_NONNULL_BEGIN
