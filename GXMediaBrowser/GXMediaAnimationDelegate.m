@@ -46,11 +46,7 @@
     if (gesture.state == UIGestureRecognizerStateBegan) {
         self.interacting = YES;
         self.interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
-        if (self.isNavigationPush) {
-            [toView.navigationController popViewControllerAnimated:YES];
-        } else {
-            [toView dismissViewControllerAnimated:YES completion:NULL];
-        }
+        [toView dismissViewControllerAnimated:YES completion:NULL];
         
     } else if (gesture.state == UIGestureRecognizerStateChanged) {
         [self.interactivePopTransition updateInteractiveTransition:progress];
@@ -100,15 +96,17 @@
 
 - (void)presentViewAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     // 过渡view
-    UIView *destinationView = [transitionContext viewForKey:UITransitionContextToViewKey];
+    UIView *transitionView = [transitionContext viewForKey:UITransitionContextToViewKey];
     // 容器view
-    UIView* containerView = [transitionContext containerView];
-    if (!destinationView) return;
-    // 过渡view添加到容器view上
-    [containerView addSubview:destinationView];
+    UIView *containerView = [transitionContext containerView];
     
-    // 目标控制器
+    UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    if (!(toViewController.presentingViewController == fromViewController)) {
+        transitionView = toViewController.view;
+    }
+    [containerView addSubview:transitionView];
+    
     // 判断是否为UINavigationController
     GXMediaBrowser *destinationController;
     if ([toViewController isKindOfClass:[UINavigationController class]]) {
@@ -137,21 +135,21 @@
         annimateViwe.frame = originFrame;
         [containerView addSubview:annimateViwe];
         CGRect endFrame = coverImageFrameToFullScreenFrame(self.selectedImage);
-        destinationView.alpha = 0.0;
+        transitionView.alpha = 0.0;
         // 过渡动画执行
         [UIView animateWithDuration:GX_AnimationSpringDuration delay:0
              usingSpringWithDamping:GX_UsingSpringWithDamping
               initialSpringVelocity:GX_InitialSpringVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^
          {
              annimateViwe.frame = endFrame;
-             destinationView.alpha = 1.0;
+             transitionView.alpha = 1.0;
          } completion:^(BOOL finished) {
              destinationController.collectionView.hidden = NO;
              [UIView animateWithDuration:GX_AnimationDefaultDuration animations:^{
                  annimateViwe.alpha = 0.0;
              } completion:^(BOOL finished) {
                  [annimateViwe removeFromSuperview];
-                 [transitionContext completeTransition:YES];
+                 [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
              }];
          }];
         return;
@@ -169,21 +167,21 @@
     annimateViwe.frame = originFrame;
     [containerView addSubview:annimateViwe];
     CGRect endFrame = coverImageFrameToFullScreenFrame(self.selectedImage);
-    destinationView.alpha = 0.0;
+    transitionView.alpha = 0.0;
     // 过渡动画执行
     [UIView animateWithDuration:GX_AnimationSpringDuration delay:0
          usingSpringWithDamping:GX_UsingSpringWithDamping
           initialSpringVelocity:GX_InitialSpringVelocity options:UIViewAnimationOptionCurveEaseInOut animations:^
      {
          annimateViwe.frame = endFrame;
-         destinationView.alpha = 1.0;
+         transitionView.alpha = 1.0;
      } completion:^(BOOL finished) {
          destinationController.collectionView.hidden = NO;
          [UIView animateWithDuration:GX_AnimationDefaultDuration animations:^{
              annimateViwe.alpha = 0.0;
          } completion:^(BOOL finished) {
              [annimateViwe removeFromSuperview];
-             [transitionContext completeTransition:YES];
+             [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
          }];
      }];
 }
@@ -193,12 +191,16 @@
     UIView *transitionView = [transitionContext viewForKey:UITransitionContextFromViewKey];
     UIView *containerView  = [transitionContext containerView];
     
-    if (self.isNavigationPush) {
-        UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-        [containerView addSubview:toVC.view];
-    }
-    // 目标控制器
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    BOOL isPresenting = (fromViewController.presentingViewController == toViewController);
+    if (isPresenting) {
+        [containerView addSubview:transitionView];
+    } else {
+        [containerView addSubview:toViewController.view];
+        [containerView addSubview:transitionView];
+    }
+
     // 判断是否为UINavigationController
     GXMediaBrowser *destinationController;
     if ([fromViewController isKindOfClass:[UINavigationController class]]) {
@@ -212,7 +214,7 @@
     // 取出控制器当前显示的cell
     GXMediaBaseCell *dismissCell = [presentView.visibleCells firstObject];
     if (!dismissCell) {
-        [transitionContext completeTransition:YES];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         return;
     }
     // 新建过渡动画imageview
@@ -250,7 +252,7 @@
          } completion:^(BOOL finished) {
              imageView.hidden = NO;
              [annimateViwe removeFromSuperview];
-             [transitionContext completeTransition:YES];
+             [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
          }];
         return;
     }
@@ -279,7 +281,7 @@
      } completion:^(BOOL finished) {
          originCell.hidden = NO;
          [annimateViwe removeFromSuperview];
-         [transitionContext completeTransition:YES];
+         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
      }];
 }
 

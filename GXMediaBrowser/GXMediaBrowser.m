@@ -114,7 +114,9 @@
 #pragma mark - UIPanGestureRecognizer
 
 - (void)panGestureRecognizer:(UIPanGestureRecognizer*)pan {
-    [self performScaleWithPan:pan];
+    if (self.presentingViewController) {
+        [self performScaleWithPan:pan];
+    }
 }
 
 - (void)performScaleWithPan:(UIPanGestureRecognizer *)pan {

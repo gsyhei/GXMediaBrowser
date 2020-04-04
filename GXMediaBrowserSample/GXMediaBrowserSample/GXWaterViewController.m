@@ -172,7 +172,6 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
     
     [self.mediaAnimationDelegate configureTransition:self collectionView:self.waterCollectionView
                             transitionIndexPath:indexPath transitionImage:selectImage];
-    self.mediaAnimationDelegate.isNavigationPush = NO;
     
     NSInteger index = 0;
     NSMutableArray<GXMediaBrowserModel*> *modelArray = [NSMutableArray array];
@@ -195,6 +194,11 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
 //    browser.delegate = self;
     browser.currentPage = index;
     browser.backBarItem = @"返回";
+    
+    // push方式（如果是push，self.navigationController.delegate = nil;这句必须加到当前的popToViewController前面）
+//    self.navigationController.delegate = self.mediaAnimationDelegate;
+//    [self.navigationController pushViewController:browser animated:YES];
+    
     // 不带UINavigationController的时候应该这样写
 //    browser.transitioningDelegate = self.mediaAnimationDelegate;
 //    browser.modalPresentationStyle = UIModalPresentationCustom;

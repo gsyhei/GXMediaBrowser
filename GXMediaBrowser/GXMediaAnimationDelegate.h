@@ -16,13 +16,11 @@
 @optional
 @property (nonatomic, assign) CGRect popFromRect;
 @property (nonatomic, assign) CGRect backToRect;
-@property (nonatomic,   weak) UIView *formImageView;
+@property (nonatomic,   weak) UIView * _Nullable formImageView;
 @end
 
 NS_ASSUME_NONNULL_BEGIN
 @interface GXMediaAnimationDelegate : NSObject<UIViewControllerTransitioningDelegate,UIViewControllerAnimatedTransitioning,UINavigationControllerDelegate>
-/** push/present方式弹出视图，默认present */
-@property (nonatomic, assign) BOOL isNavigationPush;
 /** 如果为UICollectionView浏览，开放全局只读属性方便读取 */
 @property (nonatomic,   weak, readonly) UICollectionView *collectionView;
 /** 自定义过渡rect代理设置（当为UICollectionView浏览时不需要设置） */
